@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVITY 1</title>
+</head>
+<body>
+    <h3>class in JS</h3>
+    <p id="p1"></p>
+    <script>
+         class student{
+         constructor(name,month){
+            this.name=name;
+            this.month=month;
+         }
+         show(){
+            var date=new Date().getMonth();
+            //return date;
+                return "name of student is "+this.name+" and age is "+(date-this.month);
+         
+         }
+        }
+        st=new student("sara",5);
+        document.getElementById("p1").innerHTML=st.show();
+    </script>
+</body>
+</html>
