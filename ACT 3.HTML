@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>act 3</title>
+</head>
+<body>
+    <h3>inheritance in js</h3>
+    <p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<script>
+    class student{
+        constructor(name){
+            this.name=name;
+        }
+        show(){
+            return this.name;
+        }
+        //static methods
+        static hello(){
+            return "Hello!";
+        }
+        static HI(x){
+            return "HI "+x.name;
+        }
+    }
+    s1=new student("Zoha");
+    document.getElementById("p1").innerHTML=s1.show();
+    document.getElementById("p2").innerHTML=student.hello();
+    document.getElementById("p3").innerHTML=student.HI(s1);
+</script>
+
+
+
+
+</body>
+</html>
